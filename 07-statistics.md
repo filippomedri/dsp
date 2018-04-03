@@ -86,15 +86,34 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+In 3000 births we have 10 set of identical twins, 5 of males and 5 of females.
+In 3000 births we have 24 set of fraternal twins, 6 of them are both females, 12 of different gender and 6 both males.
+We can conclude that in 3000 birth we have 11 (5+6) set of male twins, 5 of them of identical twins.
+The probability that Elvis was an identical twin is 5/11 or little more than 45%.
 
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+In frequentist statistics only repeatable random events can have probabilities and these probabilities are equal to the long term 
+frequency of occurrence of such events. In frequentist statistic one do not attach probabilities to hypothesis or to any fixed but unknown values.\
+In contrast in Bayesian statistics one can use probabilities to represent the uncertainty of any event, or hypothesis.\
+In Bayesian statistic one evaluate the posterior probability (i.e.: the probability of the hypothesis given the data)
+as the product of the prior probability (i.e: probability of the hypothesis before seeing the data) with the probability of the data 
+given the hypothesis, normalized on the probability of the data.
+```math
+P(H|D) = P(H)P(D|H)/P(D)
+```
+\
+In contrast in frequentist statistic, one do not attach probability to an hypothesis, but instead decide to accept or reject null hypothesis by evaluating 
+the p-value(i.e.: the probability of the data given that the null hypothesis is true).
+\
+The procedure of accepting/rejecting a null hypothesis is the following:
+1. Specify  \alpha as the level of significancy 
+2. Perform an experiment to collect the data for the test of the null hypothesis
+3. Calculate the p-value based on the data  ```  p-value = P(Data| null Hypothesis)```
+4. If the p-value is less than \alpha reject the null hypothesis
 ---
 
 ## <a name="section-e"></a>5.  Optional Exercises
